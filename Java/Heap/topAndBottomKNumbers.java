@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class App {
+class App {
 
     public static List<Integer> findKLargestNumbers(int[] nums, int k){
         PriorityQueue<Integer> minHeap = new PriorityQueue<>(k, (a,b) ->  a-b);
