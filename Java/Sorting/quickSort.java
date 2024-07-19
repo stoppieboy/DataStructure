@@ -1,5 +1,5 @@
 import java.util.*;
-public class quicksort {
+class quicksort {
 
     private static void swap(int[] ar, int a, int b){
         int temp = ar[a];
