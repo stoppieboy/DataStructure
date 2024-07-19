@@ -2,6 +2,6 @@
 
 ## Data Structures
 
-- Trie [Java](Java/Trie/autocomplete_suggestions.java)
+- Trie [Java](Java/Trie)
 
 ## Algorithms
