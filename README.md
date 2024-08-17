@@ -2,6 +2,7 @@
 
 ## Data Structures
 
+- Vector ([C](C/Vector))
 - Graph ([Java](Java/Graph) | [C](C/Graph))
 - Heap ([Java](Java/Heap))
 - LinkedList ([Java](Java/LinkedList))
