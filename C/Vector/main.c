@@ -14,5 +14,9 @@ int main(){
 
     int idx = getchar() - '0';
     printf("val = %d\n", *(int*)vector_at(vector, idx));
+    printf("val at the last = %d\n", *(int*)vector_back(vector));
+    printf("popped = %d\n", *(int*)vector_pop(vector));
+    printf("val at the last = %d\n", *(int*)vector_back(vector));
+
     return 0;
 }

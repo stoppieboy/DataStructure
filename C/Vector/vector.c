@@ -16,6 +16,11 @@ void* vector_at(struct vector* vector, int idx)
     return vector->data + (idx*vector->dsize);
 }
 
+void* vector_back(struct vector* vector){
+    // return vector->data + ((vector->rindex-1) * vector->dsize);
+    return vector_at(vector, vector->rindex-1);
+}
+
 bool vector_resize(struct vector* vector)
 {
     vector->data = realloc(vector->data, (vector->count+VECTOR_ELEMENT_INCREMENT)*vector->dsize);
@@ -39,6 +44,21 @@ void vector_push(struct vector* vector, void* data)
             vector->count++;
         }
     }
+}
+
+bool vector_in_bounds_for_pop(struct vector* vector,  int idx)
+{
+    return (idx >= 0 && idx < vector->capacity);
+}
+
+void* vector_pop(struct vector* vector)
+{
+    void* ptr = NULL;
+    ptr = vector_back(vector);
+    vector->rindex--;
+    vector->count--;
+
+    return ptr;
 }
 
 void vector_free(struct vector* vector)

@@ -22,8 +22,10 @@ struct vector{
 
 struct vector* vector_create(size_t esize);
 void* vector_at(struct vector* vector, int idx);
+void* vector_back(struct vector* vector);
 bool vector_resize(struct vector* vector);
 void vector_push(struct vector* vector, void* data);
+void* vector_pop(struct vector* vector);
 void vector_free(struct vector* vector);
 
 #endif
